@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* Typography */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   letter-spacing: -0.011em;
@@ -11,6 +12,7 @@ code, pre, kbd, samp {
   font-size: 0.9em;
 }
 
+/* Theme Variables */
 :root {
   --accent-cyan: #0284c7;
   --accent-bg: rgba(2, 132, 199, 0.08);
@@ -27,6 +29,7 @@ code, pre, kbd, samp {
   --card-shadow-hover: 0 12px 20px -3px rgba(0, 0, 0, 0.45);
 }
 
+/* Post Cards */
 .post-entry {
   background: var(--entry) !important;
   border: 1px solid var(--card-border) !important;
@@ -49,6 +52,7 @@ code, pre, kbd, samp {
   letter-spacing: -0.02em;
 }
 
+/* Tags & Callouts */
 .post-tags a, .terms-tags a {
   background: var(--accent-bg) !important;
   color: var(--accent-cyan) !important;
@@ -75,7 +79,7 @@ blockquote {
   color: var(--primary);
 }
 
-/* Polished Engineering Tables */
+/* Tables & Code */
 .post-content table {
   width: 100%;
   border-collapse: collapse;
@@ -99,10 +103,6 @@ blockquote {
   border-bottom: 1px solid var(--card-border);
 }
 
-.post-content tr:hover {
-  background: rgba(56, 189, 248, 0.03);
-}
-
 .post-content pre {
   border: 1px solid var(--card-border);
   border-radius: 8px;
@@ -122,10 +122,110 @@ blockquote {
   cursor: pointer;
 }
 
-/* KaTeX Display Spacing */
 .katex-display {
   margin: 1.25rem 0 !important;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 4px 0;
+}
+
+/* ==========================================================================
+   INFINITE LOGO MARQUEE (Blurred Entry/Exit & Responsive)
+   ========================================================================== */
+.logo-marquee-wrapper {
+  width: 100%;
+  margin: 2.25rem 0 1.25rem 0;
+  text-align: center;
+}
+
+.logo-marquee-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 1.25rem;
+  opacity: 0.85;
+}
+
+.logo-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  /* Blurred / Faded edge mask */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: logo-scroll 24s linear infinite;
+}
+
+.logo-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding-right: 3.5rem; /* Ensures seamless looping without stutter */
+}
+
+.logo-slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-slide img {
+  height: 28px !important;
+  max-height: 28px !important;
+  width: auto !important;
+  max-width: 110px !important;
+  object-fit: contain !important;
+  display: block !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light Mode: Muted monochrome by default, colored on hover */
+.logo-slide img {
+  filter: grayscale(100%) opacity(0.55);
+}
+
+.logo-slide img:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.08);
+}
+
+/* Dark Mode: Crisp white SVGs and visible PNG crests */
+.dark .logo-slide img[src$=".svg"] {
+  filter: invert(0.85) opacity(0.65);
+}
+
+.dark .logo-slide img[src$=".svg"]:hover {
+  filter: invert(1) drop-shadow(0 0 8px rgba(56, 189, 248, 0.5)) opacity(1);
+  transform: scale(1.08);
+}
+
+.dark .logo-slide img[src$=".png"] {
+  filter: grayscale(100%) brightness(0.9) opacity(0.65);
+}
+
+.dark .logo-slide img[src$=".png"]:hover {
+  filter: grayscale(0%) brightness(1) opacity(1);
+  transform: scale(1.08);
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
