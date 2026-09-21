@@ -53,8 +53,26 @@ params:
 
   homeInfoParams:
     Title: "Mohammed Seghir GACEB"
-    Content: >
+    Content: |
       Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student. Documenting enterprise network performance, detection engineering, and security automation.
+
+      <div class="logo-slider-container">
+        <div class="logo-slider-title">Academic Institutions & Industry Technologies</div>
+        <div class="logo-slider">
+          <div class="logo-track">
+            <!-- Set 1 -->
+            <div class="logo-item"><img src="/logos/apu.png" alt="Asia Pacific University"></div>
+            <div class="logo-item"><img src="/logos/dmu.png" alt="De Montfort University"></div>
+            <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco Systems"></div>
+            <div class="logo-item"><img src="/logos/aws.svg" alt="Amazon Web Services"></div>
+            <!-- Set 2 (Duplicate for infinite seamless scroll) -->
+            <div class="logo-item"><img src="/logos/apu.png" alt="Asia Pacific University"></div>
+            <div class="logo-item"><img src="/logos/dmu.png" alt="De Montfort University"></div>
+            <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco Systems"></div>
+            <div class="logo-item"><img src="/logos/aws.svg" alt="Amazon Web Services"></div>
+          </div>
+        </div>
+      </div>
 
   socialIcons:
     - name: "github"
