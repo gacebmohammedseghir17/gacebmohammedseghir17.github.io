@@ -1,0 +1,14 @@
+{{- with site.Params.trustRow }}
+<section class="home-section trust-section">
+    <div class="section-heading trust-heading">
+        <p class="section-kicker">{{ .label }}</p>
+    </div>
+    <div class="trust-grid" aria-label="{{ .label }}">
+        {{- range .items }}
+        <div class="trust-item" aria-label="{{ .name }}">
+            <img src="{{ .logo }}" alt="{{ .name }}">
+        </div>
+        {{- end }}
+    </div>
+</section>
+{{- end }}

@@ -1,4 +1,4 @@
-﻿baseURL: "https://gacebmohammedseghir17.github.io/"
+baseURL: "https://gacebmohammedseghir17.github.io/"
 title: "Mohammed Seghir GACEB"
 theme: "PaperMod"
 
@@ -37,9 +37,10 @@ params:
   env: production
   math: true
   title: "Mohammed Seghir GACEB"
-  description: "Cybersecurity Master's Student documenting enterprise lab architectures, detection engineering, threat analysis, and security automation."
-  keywords: [Cybersecurity, Network Engineering, SOC, SIEM, NetSim, Cisco Packet Tracer, QoS]
+  description: "Cybersecurity MSc student building detection, network, and security automation labs with a portfolio of hands-on write-ups and case studies."
+  keywords: [Cybersecurity, Detection Engineering, Security Automation, Network Engineering, SOC, SIEM, NetSim, Cisco Packet Tracer]
   author: "Mohammed Seghir GACEB"
+  mainSections: ["posts"]
 
   defaultTheme: auto
   disableThemeToggle: false
@@ -50,41 +51,57 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "safari-pinned-tab.svg"
 
   homeInfoParams:
-    Title: "Mohammed Seghir GACEB"
-    Content: |
-      Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student. Documenting enterprise network performance, detection engineering, and security automation.
+    Eyebrow: "Cybersecurity Portfolio"
+    Title: "Cybersecurity MSc Student Building Detection, Network, and Security Automation Labs"
+    Content: "I document hands-on cybersecurity labs, network simulations, detection ideas, and security automation work while building toward a security engineering career."
+    PrimaryButton:
+      name: "View Projects"
+      url: "/projects/"
+    SecondaryButton:
+      name: "Read Write-ups"
+      url: "/posts/"
 
-      <div class="logo-slider-wrapper">
-        <div class="logo-slider-label">Academic Institutions & Technology Stack</div>
-        <div class="logo-slider">
-          <div class="logo-slider-track" style="display:flex;width:max-content;">
-            <!-- Group 1 -->
-            <div class="logo-set" style="display:flex;align-items:center;gap:3.5rem;padding-right:3.5rem;">
-              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-            </div>
-            <!-- Group 2 (Exact duplicate for seamless infinite loop) -->
-            <div class="logo-set" style="display:flex;align-items:center;gap:3.5rem;padding-right:3.5rem;" aria-hidden="true">
-              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+  featuredItems:
+    - title: "Network Performance Metrics & Simulation Analysis"
+      summary: "A comparative case study on latency, throughput, jitter, and engineering trade-offs between NetSim and Cisco Packet Tracer."
+      url: "/posts/network-performance-netsim-vs-packet-tracer/"
+      label: "Featured Case Study"
+    - title: "Detection Engineering Track"
+      summary: "A growing body of work focused on telemetry quality, alert logic, and security operations thinking."
+      url: "/projects/#detection-engineering"
+      label: "Current Focus"
+    - title: "Security Automation Track"
+      summary: "Portfolio work around repeatable labs, documentation systems, and automation-driven workflows."
+      url: "/projects/#security-automation"
+      label: "Current Focus"
+
+  focusAreas:
+    - title: "Detection Engineering"
+      description: "Building practical ideas around telemetry, signal quality, and detection logic."
+    - title: "Network Engineering"
+      description: "Using labs and simulation to explain latency, throughput, architecture, and operational behavior."
+    - title: "Security Automation"
+      description: "Turning repetitive security and documentation tasks into clear, reusable workflows."
+
+  trustRow:
+    label: "Academic & Technical Environment"
+    items:
+      - name: "Asia Pacific University"
+        logo: "/logos/apu.png"
+      - name: "De Montfort University"
+        logo: "/logos/dmu.png"
+      - name: "Cisco"
+        logo: "/logos/cisco.svg"
+      - name: "AWS"
+        logo: "/logos/aws.svg"
 
   socialIcons:
     - name: "github"
@@ -96,15 +113,23 @@ params:
 
 menu:
   main:
-    - identifier: posts
-      name: Labs & Write-ups
-      url: /posts/
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 10
+    - identifier: posts
+      name: Write-ups
+      url: /posts/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+    - identifier: resume
+      name: Resume
+      url: /resume/
+      weight: 40
     - identifier: search
       name: Search
       url: /search/
-      weight: 20
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 30
+      weight: 50

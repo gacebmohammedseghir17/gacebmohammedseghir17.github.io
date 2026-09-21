@@ -1,0 +1,26 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-hero">
+    <div class="home-hero-copy">
+        {{- with .Eyebrow }}
+        <p class="home-hero-eyebrow">{{ . }}</p>
+        {{- end }}
+        <header class="entry-header">
+            <h1>{{ .Title | markdownify }}</h1>
+        </header>
+        <div class="entry-content md-content">
+            <p>{{ .Content }}</p>
+        </div>
+        <div class="home-hero-actions">
+            {{- with .PrimaryButton }}
+            <a class="button primary" href="{{ .url }}">{{ .name }}</a>
+            {{- end }}
+            {{- with .SecondaryButton }}
+            <a class="button secondary" href="{{ .url }}">{{ .name }}</a>
+            {{- end }}
+        </div>
+    </div>
+    <footer class="entry-footer">
+        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+    </footer>
+</article>
+{{- end -}}

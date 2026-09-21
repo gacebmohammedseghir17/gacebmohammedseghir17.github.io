@@ -1,0 +1,18 @@
+{{- with site.Params.featuredItems }}
+<section class="home-section">
+    <div class="section-heading">
+        <p class="section-kicker">Portfolio Highlights</p>
+        <h2>Featured Projects</h2>
+    </div>
+    <div class="featured-grid">
+        {{- range . }}
+        <article class="featured-card">
+            <p class="featured-label">{{ .label }}</p>
+            <h3><a href="{{ .url }}">{{ .title }}</a></h3>
+            <p>{{ .summary }}</p>
+            <a class="featured-link" href="{{ .url }}">Open</a>
+        </article>
+        {{- end }}
+    </div>
+</section>
+{{- end }}

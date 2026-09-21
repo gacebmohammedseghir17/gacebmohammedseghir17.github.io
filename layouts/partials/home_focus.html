@@ -1,0 +1,16 @@
+{{- with site.Params.focusAreas }}
+<section class="home-section">
+    <div class="section-heading">
+        <p class="section-kicker">What I Build</p>
+        <h2>Technical Focus</h2>
+    </div>
+    <div class="focus-grid">
+        {{- range . }}
+        <article class="focus-card">
+            <h3>{{ .title }}</h3>
+            <p>{{ .description }}</p>
+        </article>
+        {{- end }}
+    </div>
+</section>
+{{- end }}
