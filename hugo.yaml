@@ -1,28 +1,61 @@
 ﻿baseURL: "https://gacebmohammedseghir17.github.io/"
-title: "Mohammed Seghir GACEB | CyberSec Engineering"
+title: "Mohammed Seghir GACEB"
 theme: "PaperMod"
 
+# Technical SEO & Indexing
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# Search Index Output
 outputs:
   home:
     - HTML
     - RSS
     - JSON
 
+# Markdown & HTML rendering
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+
 params:
   env: production
-  defaultTheme: auto
+  title: "Mohammed Seghir GACEB"
+  description: "Cybersecurity Master's Student documenting enterprise lab architectures, detection engineering, threat analysis, and security automation."
+  keywords: [Cybersecurity, Detection Engineering, SOC, SIEM, Splunk, MITRE ATT&CK, Threat Hunting]
+  author: "Mohammed Seghir GACEB"
+
+  # Theme Behavior
+  defaultTheme: auto # Respects system preference; seamlessly switches via toggle
+  disableThemeToggle: false
   ShowReadingTime: true
-  ShowWordCount: true
   ShowShareButtons: false
-  ShowCodeCopyButtons: true
-  ShowBreadCrumbs: true
-  ShowToc: true
   ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
 
+  # Profile Mode / Home Banner
   homeInfoParams:
-    Title: "Hi, I'm Mohammed Seghir GACEB 👋"
-    Content: "Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student documenting enterprise labs, detection engineering, threat analysis, and security automation."
+    Title: "Mohammed Seghir GACEB"
+    Content: >
+      Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student. Documenting enterprise detection engineering, SIEM telemetry analysis, and security automation.
+    # Optional: Place a 200x200px headshot named 'avatar.png' inside D:\cyber-portfolio\static\ to display an avatar
+    # imageUrl: "/avatar.png"
+    # imageWidth: 120
+    # imageHeight: 120
+    # imageTitle: "Mohammed Seghir GACEB"
 
+  # Social Icons
   socialIcons:
     - name: "github"
       url: "https://github.com/gacebmohammedseghir17"
@@ -31,6 +64,7 @@ params:
     - name: "email"
       url: "mailto:gaceb.mohammed.seghir@gmail.com"
 
+# Top Navigation Bar
 menu:
   main:
     - identifier: posts
