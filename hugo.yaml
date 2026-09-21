@@ -1,0 +1,25 @@
+baseURL: "https://gacebmohammedseghir17.github.io/"
+title: "Mohammed Seghir GACEB | CyberSec Engineering"
+theme: "PaperMod"
+
+params:
+  env: production
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowCodeCopyButtons: true
+
+  homeInfoParams:
+    Title: "Hi, I'm Mohammed Seghir GACEB 👋"
+    Content: "Cybersecurity MSc student APU/DMU documenting enterprise labs, detection engineering, threat analysis, and security automation."
+
+menu:
+  main:
+    - identifier: posts
+      name: Labs & Write-ups
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
