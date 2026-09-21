@@ -1,5 +1,5 @@
 baseURL: "https://gacebmohammedseghir17.github.io/"
-title: "Mohammed Seghir GACEB | CyberSec Engineering"
+title: "Mohammed Seghir GACEB | CyberSec Master Degree Student"
 theme: "PaperMod"
 
 params:
@@ -12,6 +12,14 @@ params:
   homeInfoParams:
     Title: "Hi, I'm Mohammed Seghir GACEB 👋"
     Content: "Cybersecurity MSc student APU/DMU documenting enterprise labs, detection engineering, threat analysis, and security automation."
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/gacebmohammedseghir17"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/gaceb-mohammed-seghir-828236243"
+    - name: "email"
+      url: "mailto:gaceb.mohammed.seghir@gmail.com"
 
 menu:
   main:
