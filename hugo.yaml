@@ -8,35 +8,20 @@ outputs:
     - RSS
     - JSON
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true # Enables custom HTML badges and status pills
-
 params:
   env: production
-  defaultTheme: dark
-  disableThemeToggle: false
+  defaultTheme: auto
   ShowReadingTime: true
   ShowWordCount: true
   ShowShareButtons: false
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: true
   ShowToc: true
-  TocOpen: true
   ShowPostNavLinks: true
 
   homeInfoParams:
-    Title: "Mohammed Seghir GACEB 👋"
-    Content: |
-      <div class="status-badge"><span class="status-dot"></span> Open to Relocation: Netherlands & Germany</div>
-      
-      Cybersecurity MSc student APU/DMU documenting enterprise labs, detection engineering, threat analysis, and security automation.
-    buttons:
-      - name: "🛡️ Browse Lab Write-ups"
-        url: "/posts/"
-      - name: "🔍 Search Knowledge Base"
-        url: "/search/"
+    Title: "Hi, I'm Mohammed Seghir GACEB 👋"
+    Content: "Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student documenting enterprise labs, detection engineering, threat analysis, and security automation."
 
   socialIcons:
     - name: "github"
