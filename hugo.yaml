@@ -56,31 +56,31 @@ params:
     Content: |
       Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student. Documenting enterprise network performance, detection engineering, and security automation.
 
-      <div class="logo-marquee-wrapper">
-        <div class="logo-marquee-label">Academic Institutions & Technology Stack</div>
-        <div class="logo-marquee">
-          <div class="logo-marquee-track">
+      <div class="logo-slider-wrapper">
+        <div class="logo-slider-label">Academic Institutions & Technology Stack</div>
+        <div class="logo-slider">
+          <div class="logo-slider-track" style="display:flex;width:max-content;">
             <!-- Group 1 -->
-            <div class="logo-group">
-              <div class="logo-slide"><img src="/logos/apu.png" alt="APU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/dmu.png" alt="DMU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/cisco.svg" alt="Cisco" style="height:24px;max-height:24px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/aws.svg" alt="AWS" style="height:26px;max-height:26px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/apu.png" alt="APU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/dmu.png" alt="DMU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/cisco.svg" alt="Cisco" style="height:24px;max-height:24px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/aws.svg" alt="AWS" style="height:26px;max-height:26px;width:auto;max-width:100px;object-fit:contain;"></div>
+            <div class="logo-set" style="display:flex;align-items:center;gap:3.5rem;padding-right:3.5rem;">
+              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
             </div>
             <!-- Group 2 (Exact duplicate for seamless infinite loop) -->
-            <div class="logo-group" aria-hidden="true">
-              <div class="logo-slide"><img src="/logos/apu.png" alt="APU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/dmu.png" alt="DMU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/cisco.svg" alt="Cisco" style="height:24px;max-height:24px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/aws.svg" alt="AWS" style="height:26px;max-height:26px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/apu.png" alt="APU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/dmu.png" alt="DMU" style="height:28px;max-height:28px;width:auto;max-width:110px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/cisco.svg" alt="Cisco" style="height:24px;max-height:24px;width:auto;max-width:100px;object-fit:contain;"></div>
-              <div class="logo-slide"><img src="/logos/aws.svg" alt="AWS" style="height:26px;max-height:26px;width:auto;max-width:100px;object-fit:contain;"></div>
+            <div class="logo-set" style="display:flex;align-items:center;gap:3.5rem;padding-right:3.5rem;" aria-hidden="true">
+              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/apu.png" alt="APU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/dmu.png" alt="DMU" style="height:32px!important;max-height:32px!important;width:auto!important;max-width:110px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/cisco.svg" alt="Cisco" style="height:26px!important;max-height:26px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
+              <div class="logo-item"><img src="/logos/aws.svg" alt="AWS" style="height:28px!important;max-height:28px!important;width:auto!important;max-width:100px!important;object-fit:contain!important;display:block!important;"></div>
             </div>
           </div>
         </div>
