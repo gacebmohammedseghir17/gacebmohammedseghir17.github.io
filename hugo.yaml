@@ -17,6 +17,16 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - - '$$'
+              - '$$'
+          inline:
+            - - '$'
+              - '$'
   highlight:
     noClasses: false
     guessSyntax: true
@@ -25,12 +35,12 @@ markup:
 
 params:
   env: production
+  math: true
   title: "Mohammed Seghir GACEB"
   description: "Cybersecurity Master's Student documenting enterprise lab architectures, detection engineering, threat analysis, and security automation."
   keywords: [Cybersecurity, Network Engineering, SOC, SIEM, NetSim, Cisco Packet Tracer, QoS]
   author: "Mohammed Seghir GACEB"
 
-  # Theme Behavior
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
@@ -41,13 +51,11 @@ params:
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
 
-  # Home Banner Configuration
   homeInfoParams:
     Title: "Mohammed Seghir GACEB"
     Content: >
       Asia Pacific University of Technology and Innovation & De Montfort University of Leicester Master of Cyber Security Student. Documenting enterprise network performance, detection engineering, and security automation.
 
-  # Recruiter & Network Links
   socialIcons:
     - name: "github"
       url: "https://github.com/gacebmohammedseghir17"
