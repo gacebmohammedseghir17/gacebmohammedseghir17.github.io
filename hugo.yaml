@@ -1,17 +1,31 @@
 baseURL: "https://gacebmohammedseghir17.github.io/"
-title: "Mohammed Seghir GACEB | CyberSec Master Degree Student"
+title: "Mohammed Seghir GACEB | CyberSec Engineering"
 theme: "PaperMod"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # Enables fast client-side indexing for Fuse.js search
 
 params:
   env: production
-  defaultTheme: auto
+  defaultTheme: dark # Default to dark theme for professional cyber aesthetic
   ShowReadingTime: true
   ShowShareButtons: false
   ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowToc: true
+  ShowPostNavLinks: true
 
   homeInfoParams:
     Title: "Hi, I'm Mohammed Seghir GACEB 👋"
     Content: "Cybersecurity MSc student APU/DMU documenting enterprise labs, detection engineering, threat analysis, and security automation."
+    buttons:
+      - name: "🛡️ Browse Lab Write-ups"
+        url: "/posts/"
+      - name: "🔍 Search Knowledge Base"
+        url: "/search/"
 
   socialIcons:
     - name: "github"
@@ -27,7 +41,11 @@ menu:
       name: Labs & Write-ups
       url: /posts/
       weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
     - identifier: tags
       name: Tags
       url: /tags/
-      weight: 20
+      weight: 30

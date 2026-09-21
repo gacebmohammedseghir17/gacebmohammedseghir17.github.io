@@ -1,0 +1,59 @@
+﻿/* Cyber-Engineering UI Enhancements */
+:root {
+  --primary: #38bdf8;
+  --theme: #0f172a;
+  --entry: #1e293b;
+  --border: #334155;
+  --radius: 12px;
+}
+
+/* Post Cards Hover Effect */
+.post-entry {
+  border: 1px solid rgba(56, 189, 248, 0.15) !important;
+  border-radius: var(--radius) !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.post-entry:hover {
+  transform: translateY(-3px) scale(1.005);
+  border-color: rgba(56, 189, 248, 0.45) !important;
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.4), 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+/* CTA Pill Buttons */
+.button {
+  background: #1e293b !important;
+  border: 1px solid #38bdf8 !important;
+  border-radius: 9999px !important;
+  color: #f8fafc !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: #38bdf8 !important;
+  color: #0f172a !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* Monospace & Tag Chips */
+.post-tags a {
+  background: rgba(56, 189, 248, 0.1) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.8rem;
+  padding: 3px 8px;
+}
+
+.post-tags a:hover {
+  background: rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Code Snippet Enhancements */
+.post-content pre {
+  border: 1px solid #334155;
+  border-radius: 8px;
+}
